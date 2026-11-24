@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ayush Thakur | Web Developer</title>
+<meta name="description" content="Ayush Thakur — IIT Bombay student, web developer and creative technologist. Explore projects, skills and collaborations.">
+<meta name="theme-color" content="#08090c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<div class="page-shell">
+  <header class="navbar" id="home">
+    <a href="#home" class="logo">AT<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-contact">Let's connect ↗</a>
+    </nav>
+    <div class="nav-right">
+      <div class="themes" aria-label="Theme colour">
+        <button data-c="#a18aff,#d4c8ff" class="on" aria-label="Violet" style="--c:#a18aff"></button>
+        <button data-c="#5eead4,#ccfbf1" aria-label="Mint" style="--c:#5eead4"></button>
+        <button data-c="#fb7185,#fecdd3" aria-label="Rose" style="--c:#fb7185"></button>
+        <button data-c="#fbbf24,#fef3c7" aria-label="Amber" style="--c:#fbbf24"></button>
+      </div>
+      <button class="menu" id="menu" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="availability reveal"><span class="status-dot"></span>AVAILABLE FOR SELECT PROJECTS</div>
+        <p class="eyebrow reveal">HELLO, I'M AYUSH THAKUR</p>
+        <h1 class="reveal">Building digital <span class="gradient-text">experiences</span> that stand out.</h1>
+        <p class="typed reveal">I'm a <b id="typed"></b><span class="caret"></span></p>
+        <p class="hero-description reveal">IIT Bombay student, web developer and creative technologist. I build modern websites that combine thoughtful design, smooth interactions and meaningful functionality.</p>
+        <div class="hero-buttons reveal">
+          <a href="#work" class="button button-primary magnetic">Explore my work <span>↗</span></a>
+          <a href="https://github.com/Ayush-IITB23" target="_blank" rel="noopener noreferrer" class="button button-secondary magnetic">GitHub ↗</a>
+        </div>
+        <div class="hero-meta reveal"><span>BASED IN INDIA</span><span>·</span><span>STUDENT AT IIT BOMBAY</span></div>
+      </div>
+
+      <div class="hero-visual reveal" data-tilt>
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-one"><i></i></div>
+        <div class="orbit orbit-two"><i></i></div>
+        <div class="visual-center"><span>AT</span></div>
+        <div class="floating-tag tag-one">DESIGN</div>
+        <div class="floating-tag tag-two">DEVELOPMENT</div>
+        <div class="floating-tag tag-three">CREATIVITY</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content"><span>WEB DEVELOPMENT</span><span>✳</span><span>CREATIVE TECHNOLOGY</span><span>✳</span><span>INTERACTIVE DESIGN</span><span>✳</span><span>3D ON THE WEB</span><span>✳</span></div>
+        <div class="marquee-content"><span>WEB DEVELOPMENT</span><span>✳</span><span>CREATIVE TECHNOLOGY</span><span>✳</span><span>INTERACTIVE DESIGN</span><span>✳</span><span>3D ON THE WEB</span><span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>A little about <span>me.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-main reveal">
+          <p class="about-lead">I enjoy turning ideas into digital experiences.</p>
+          <p>I'm Ayush Thakur, a student at the Indian Institute of Technology Bombay and a web developer interested in technology, design and building things that make an impact.</p>
+          <p>I'm officially part of IIT Bombay's Web Team, contributing to website development and management across the institute.</p>
+          <p>I enjoy exploring new technologies, experimenting with creative ideas and working on projects that challenge me to think differently.</p>
+        </div>
+        <div class="about-card reveal spot" data-tilt>
+          <div class="about-card-top"><span>QUICK PROFILE</span><span class="card-star">✳</span></div>
+          <div class="profile-item"><span>EDUCATION</span><strong>IIT Bombay</strong></div>
+          <div class="profile-item"><span>ROLE</span><strong>Web Developer</strong></div>
+          <div class="profile-item"><span>TEAM</span><strong>IIT Bombay Web Team</strong></div>
+          <div class="profile-item"><span>INTERESTS</span><strong>Technology · Design · Development</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / SELECTED WORK</p>
+        <h2>Things I've <span>built.</span></h2>
+        <p class="section-description">A selection of projects, experiments and digital work. (Hover or drag over the cards.)</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card spot reveal" data-tilt>
+          <div class="project-visual v1">
+            <div class="project-window">
+              <div class="window-top"><span></span><span></span><span></span></div>
+              <div class="mock-site">
+                <div class="mock-label">IIT BOMBAY</div>
+                <div class="mock-title">TECHNICAL<br>COUNCIL</div>
+                <div class="mock-subtitle">INNOVATION · TECHNOLOGY · COMMUNITY</div>
+                <div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category"><span>01</span><span>WEB DEVELOPMENT · 3D</span></div>
+            <h3>IIT Bombay Technical Council</h3>
+            <p>Designed and built a fully 3D website experience for IIT Bombay's Technical Council, bringing interactive visuals and web design together.</p>
+            <div class="project-bottom"><span>INTERACTIVE WEB EXPERIENCE</span><a href="https://itc.gymkhana.iitb.ac.in/" class="project-link">Add live link ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project-card spot reveal" data-tilt>
+          <div class="project-visual v2">
+            <div class="abstract-card">
+              <span>CREATIVE</span>
+              <strong>Ideas into<br>experiences.</strong>
+              <div class="abstract-circle"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-category"><span>02</span><span>WEB DEVELOPMENT</span></div>
+            <h3>Personal Web Projects</h3>
+            <p>A space for independent web development experiments and projects. Replace this card with a project you want to showcase.</p>
+            <div class="project-bottom"><span>INDEPENDENT WORK</span><a href="https://github.com/Ayush-IITB23" target="_blank" rel="noopener noreferrer" class="project-link">View GitHub ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / EXPERIENCE</p>
+        <h2>Where I <span>contribute.</span></h2>
+      </div>
+      <div class="experience-card spot reveal">
+        <div class="experience-date">CURRENT</div>
+        <div class="experience-details">
+          <p class="eyebrow">WEB DEVELOPMENT</p>
+          <h3>IIT Bombay — Web Team</h3>
+          <p>Official member of IIT Bombay's Web Team, contributing to the development and management of websites across the institute.</p>
+        </div>
+        <div class="experience-symbol">↗</div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / TOOLKIT</p>
+        <h2>Tools of the <span>trade.</span></h2>
+        <div class="filters" id="filters">
+          <button class="on" data-f="all">All</button>
+          <button data-f="1">Programming</button>
+          <button data-f="2">Frameworks</button>
+          <button data-f="3">Tools</button>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card spot reveal" data-g="1">
+          <span class="skill-number">01</span><h3>Programming</h3>
+          <div class="skill-tags"><span>C++</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Git</span></div>
+        </div>
+        <div class="skill-card spot reveal" data-g="2">
+          <span class="skill-number">02</span><h3>Frameworks &amp; Libraries</h3>
+          <div class="skill-tags"><span>React.js</span><span>Next.js</span><span>Django</span><span>NumPy</span><span>Pandas</span><span>Pygame</span></div>
+        </div>
+        <div class="skill-card spot reveal" data-g="3">
+          <span class="skill-number">03</span><h3>Software &amp; Tools</h3>
+          <div class="skill-tags"><span>Blender</span><span>Fusion 360</span><span>Arduino</span><span>GitHub</span><span>MongoDB</span><span>Linux</span><span>Canva</span><span>Excel</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow reveal">05 / GET IN TOUCH</p>
+      <h2 class="reveal">Have an idea?<br><span>Let's build it.</span></h2>
+      <p class="contact-description reveal">Interested in working together or have a project in mind? Feel free to reach out.</p>
+      <div class="cta reveal">
+        <a href="mailto:ayush.thakur00540@gmail.com" class="button button-primary magnetic">Get in touch ↗</a>
+        <button class="button button-secondary magnetic" id="copyMail" type="button">Copy email</button>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:ayush.thakur00540@gmail.com">EMAIL<span>ayush.thakur00540@gmail.com ↗</span></a>
+        <a href="tel:+917876700054">PHONE<span>+91 78767 0054 ↗</span></a>
+        <a href="https://github.com/Ayush-IITB23" target="_blank" rel="noopener noreferrer">GITHUB<span>Ayush-IITB23 ↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="footer-logo">AT<span>.</span></a>
+    <p>© <span id="year">2026</span> AYUSH THAKUR</p>
+    <a href="#home" class="back-to-top">BACK TO TOP ↑</a>
+  </footer>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
